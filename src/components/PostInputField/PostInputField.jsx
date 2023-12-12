@@ -1,8 +1,11 @@
 const PostInputField = ({}) => {
+  var inputName = "";
+  var inputPost = "";
   return (
     <div>
-      <h1>Name</h1>
-      <h1>Post</h1>
+      <h2>Name</h2>
+
+      <h2>Post</h2>
     </div>
   );
 };
