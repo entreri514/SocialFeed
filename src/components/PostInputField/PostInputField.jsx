@@ -1,3 +1,5 @@
+import App from "../../App";
+
 const PostInputField = ({}) => {
   var inputName = "";
   var inputPost = "";
