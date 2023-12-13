@@ -1,12 +1,9 @@
-import App from "../../App";
-import PostInputField from "../PostInputField/PostInputField";
-import PostData from "../PostData/PostData";
-const PostFeed = ({ posts }) => {
-  var postItems = posts.map((post) => (
-    <PostData key={post.name} post={post.post} />
-  ));
+import Post from "../Post/Post";
+import { useState, useEffect } from "react";
 
-  var likeDislike;
+//debugger;
+const PostFeed = ({ posts }) => {
+  var postItems = posts.map((post, i) => <Post key={i} post={post} />);
 
   return <div>{postItems}</div>;
 };
