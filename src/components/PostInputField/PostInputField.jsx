@@ -4,7 +4,7 @@ const PostInputField = ({}) => {
   var inputName = "";
   var inputPost = "";
   return (
-    <div>
+    <div classname="flex-item">
       <h2>Name</h2>
 
       <h2>

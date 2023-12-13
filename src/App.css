@@ -1,1 +1,14 @@
-
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: lavender;
+}
+.flex-container {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.flex-item {
+}

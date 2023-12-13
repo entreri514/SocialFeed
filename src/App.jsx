@@ -26,8 +26,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PostInputField />
-      <PostFeed posts={posts} />
+      <div classname="flex-container">
+        <PostInputField />
+        <PostFeed posts={posts} />
+      </div>
     </div>
   );
 }
