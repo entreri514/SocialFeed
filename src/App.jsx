@@ -8,14 +8,17 @@ function App() {
     {
       name: "Julius Caesar",
       post: "hgvdfjsikpahgjdksahfgjkdsahfjkdlsahfjkldsahfjkls",
+      like: null,
     },
     {
       name: "Cassius",
       post: "nfvjdsohafujiodshaofiuhdsuaiohfduiodsahuifohseduiaohfduiosyhafuiodsa",
+      like: null,
     },
     {
       name: "Brutus",
       post: "uidyfuiodsuhgfuioashfiodsha",
+      like: null,
     },
   ];
 
@@ -26,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div classname="flex-container">
+      <div>
         <PostInputField />
         <PostFeed posts={posts} />
       </div>

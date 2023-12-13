@@ -5,10 +5,3 @@
   box-sizing: content-box;
   background-color: lavender;
 }
-.flex-container {
-  display: flex;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-.flex-item {
-}
