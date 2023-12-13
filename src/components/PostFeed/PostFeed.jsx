@@ -1,21 +1,13 @@
 import App from "../../App";
 import PostInputField from "../PostInputField/PostInputField";
-const PostFeed = ({}) => {
-  var posts = [
-    "postfeedpostfeedpostfeedpostfeed",
-    "postfeedpostfeedpostfeedpostfeed",
-    "postfeedpostfeedpostfeedpostfeed",
-  ];
-  var postItems = posts.map((post) => <div>{post}</div>);
-  var likeDislike;
-  var names = ["Julius Caesar", "Cassius", "Brutus"];
-  var nameItems = names.map((name) => <div>{name}</div>);
-  return (
-    <div>
-      {nameItems}
-      {postItems}
-    </div>
-  );
-};
+import PostData from "../PostData/PostData";
+const PostFeed = ({ posts }) => {
+  var postItems = posts.map((post) => (
+    <PostData key={post.name} post={post.post} />
+  ));
 
+  var likeDislike;
+
+  return <div>{postItems}</div>;
+};
 export default PostFeed;

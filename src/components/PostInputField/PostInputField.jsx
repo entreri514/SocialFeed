@@ -1,5 +1,5 @@
 import App from "../../App";
-
+import InputItem from "../InputItem/InputItem";
 const PostInputField = ({}) => {
   var inputName = "";
   var inputPost = "";
@@ -7,7 +7,9 @@ const PostInputField = ({}) => {
     <div>
       <h2>Name</h2>
 
-      <h2>Post</h2>
+      <h2>
+        <InputItem />
+      </h2>
     </div>
   );
 };

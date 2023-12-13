@@ -4,6 +4,8 @@ import PostInputField from "./components/PostInputField/PostInputField";
 import PostFeed from "./components/PostFeed/PostFeed";
 
 function App() {
+  //state variable for posts to pass down
+
   return (
     <div className="App">
       <Header />
