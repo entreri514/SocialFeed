@@ -4,6 +4,9 @@ import PostInputField from "./components/PostInputField/PostInputField";
 import PostFeed from "./components/PostFeed/PostFeed";
 import { useState, useEffect } from "react";
 function App() {
+  const handleNewPost = (newName, newPost) => {
+    const updatedPosts = [...posts, newPost];
+  };
   const postData = [
     {
       name: "Julius Caesar",
@@ -32,6 +35,7 @@ function App() {
       <div>
         <PostInputField />
         <PostFeed posts={posts} />
+        <PostInputField onNewName={handleNewPost} />
       </div>
     </div>
   );

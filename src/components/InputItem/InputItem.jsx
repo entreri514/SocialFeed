@@ -3,7 +3,12 @@ const InputItem = ({}) => {
   const handleCreate = (e) => {};
   return (
     <div className="input-item">
-      <span>Post</span>
+      <div>
+        <label>Post</label>
+
+        <InputItem />
+      </div>
+
       <button>Create</button>
     </div>
   );
